@@ -1,6 +1,6 @@
-<h2> <%= @search.count %> Results</h2>
+<h2> <%= @search.members.count %> Results</h2>
 
-<% @search.each do |member| %>
+<% @search.members.each do |member| %>
   <div class="member">
     <span class="name"> <%= member.name %></span>
     <span class="role"> <%= member.role %></span>
